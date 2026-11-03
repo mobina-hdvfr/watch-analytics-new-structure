@@ -1,0 +1,12 @@
+INSERT INTO analytics.dim_user
+(user_id, phone, first_name, last_name, email, email_verified, status, place_id, created_at, updated_at, last_login) VALUES
+(toUUID('00000000-0000-0000-0000-000000000001'), '09000000001', 'آرش',    'کیانی',  'arash.kiani@example.com',      true,  'verify', 15, toDateTime64('2025-01-10 08:30:00', 3, 'UTC'), now64(3), now64(3) - INTERVAL 1 DAY),
+(toUUID('00000000-0000-0000-0000-000000000002'), '09000000002', 'شیرین',  'پارسا',  'shirin.parsa@example.com',     true,  'verify', 41, toDateTime64('2025-02-15 19:10:00', 3, 'UTC'), now64(3), now64(3) - INTERVAL 1 DAY),
+(toUUID('00000000-0000-0000-0000-000000000003'), '09000000003', 'کیوان',  'پورمهر', 'keyvan.pourmehr@example.com',  true,  'verify', 7,  toDateTime64('2025-03-01 21:45:00', 3, 'UTC'), now64(3), now64(3) - INTERVAL 2 DAY),
+(toUUID('00000000-0000-0000-0000-000000000004'), '09000000004', 'مهسا',   'سپهری',  'mahsa.sepehri@example.com',    true,  'verify', 33, toDateTime64('2025-03-20 12:00:00', 3, 'UTC'), now64(3), now64(3) - INTERVAL 3 DAY),
+(toUUID('00000000-0000-0000-0000-000000000005'), '09000000005', 'بهرام',  'رستمی',  'bahram.rostami@example.com',   true,  'verify', 1,  toDateTime64('2025-04-05 17:20:00', 3, 'UTC'), now64(3), now64(3) - INTERVAL 5 DAY),
+(toUUID('00000000-0000-0000-0000-000000000006'), '09000000006', 'پریسا',  'بهرامی', 'parisa.bahrami@example.com',   true,  'verify', 49, toDateTime64('2025-05-12 09:15:00', 3, 'UTC'), now64(3), now64(3) - INTERVAL 8 DAY),
+(toUUID('00000000-0000-0000-0000-000000000007'), '09000000007', 'کامران', 'نوروزی', 'kamran.norouzi@example.com',   true,  'verify', 43, toDateTime64('2025-06-18 22:30:00', 3, 'UTC'), now64(3), now64(3) - INTERVAL 12 DAY),
+(toUUID('00000000-0000-0000-0000-000000000008'), '09000000008', 'آزاده',  'آذرنیا', 'azadeh.azarnia@example.com',   false, 'init',   57, toDateTime64('2025-07-22 14:05:00', 3, 'UTC'), now64(3), now64(3) - INTERVAL 20 DAY),
+(toUUID('00000000-0000-0000-0000-000000000009'), '09000000009', 'نیما',   'فرهادی', 'nima.farhadi@example.com',     true,  'verify', 9,  toDateTime64('2025-08-30 11:40:00', 3, 'UTC'), now64(3), now64(3) - INTERVAL 1 DAY),
+(toUUID('00000000-0000-0000-0000-000000000010'), '09000000010', 'ترانه',  'دلاوری', 'taraneh.delavari@example.com', false, 'init',   61, toDateTime64('2025-09-14 16:50:00', 3, 'UTC'), now64(3), now64(3) - INTERVAL 25 DAY);
